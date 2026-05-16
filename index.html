@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- МЕТА-ТЕГИ ДЛЯ ПРЕВЬЮ ССЫЛКИ (ОТПРАВКА В МЕССЕНДЖЕРЫ) -->
+    <meta property="og:title" content="Татьяна & Павел | Приглашение на свадьбу">
+    <meta property="og:description" content="26 июля 2026 года. Парк-отель MillWooD. Ждём вас на нашем празднике!">
+    <meta property="og:image" content="https://atomismb.github.io/wedding-invite/images/preview.jpg">
+    <meta property="og:url" content="https://atomismb.github.io/wedding-invite/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
     <title>Татьяна & Павел | Приглашение на свадьбу</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,7 +30,6 @@
         
         body {
             font-family: 'Comfortaa', cursive;
-            /* Основной фон — замощённая картинка (БЕЗ затемнения) */
             background-image: url('images/bg-pattern.jpg');
             background-repeat: repeat;
             background-position: top left;
@@ -29,23 +37,21 @@
             min-height: 100vh;
         }
         
-        /* Убрана тёмная накладка — фон полностью светлый */
-        
         /* Детские фото по бокам с подписями */
         .kids-left-wrapper {
             position: fixed;
             left: 30px;
-			bottom: 20px;
+            bottom: 20px;
             z-index: 10;
             text-align: center;
         }
         
         .kids-right-wrapper {
             position: fixed;
-			right: 30px;
-			bottom: 20px;      /* притянуто к низу */
-			z-index: 10;
-			text-align: center;
+            right: 30px;
+            bottom: 20px;
+            z-index: 10;
+            text-align: center;
         }
         
         .kids-photo-left, .kids-photo-right {
@@ -96,7 +102,6 @@
             padding: 30px 25px 60px;
         }
         
-        /* Фон карточек — молочно-белый с имитацией текстуры бумаги */
         .card {
             background: #fef9ef;
             background-image: 
@@ -346,13 +351,11 @@
 </head>
 <body>
 
-<!-- Левая сторона: фото + подпись "Невеста" -->
 <div class="kids-left-wrapper">
     <img src="images/kid-left.jpg" class="kids-photo-left" alt="Детское фото невесты">
     <div class="photo-caption left-caption"> Невеста </div>
 </div>
 
-<!-- Правая сторона: фото + подпись "Жених" -->
 <div class="kids-right-wrapper">
     <img src="images/kid-right.jpg" class="kids-photo-right" alt="Детское фото жениха">
     <div class="photo-caption right-caption"> Жених </div>
@@ -405,7 +408,7 @@
             ✦ Мероприятие планируется для взрослых гостей, спасибо за понимание! ✦
         </div>
         
-       <form id="guestForm" action="https://script.google.com/macros/s/AKfycbyOfFpapPaHADO5TahLK7rNbV-ioNpbUoMer3ggzA0Fqye5OKE6c-VqrdyoSn6skrL1/exec" method="POST">
+        <form id="guestForm" action="https://script.google.com/macros/s/AKfycbyOfFpapPaHADO5TahLK7rNbV-ioNpbUoMer3ggzA0Fqye5OKE6c-VqrdyoSn6skrL1/exec" method="POST">
             
             <input type="text" name="_gotcha" style="display:none">
             
