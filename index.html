@@ -89,10 +89,46 @@
         }
         
         @media (max-width: 1400px) {
-            .kids-left-wrapper, .kids-right-wrapper {
-                display: none;
-            }
-        }
+    .kids-left-wrapper {
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
+        z-index: 10;
+        text-align: center;
+    }
+    .kids-right-wrapper {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: 10;
+        text-align: center;
+    }
+    .kids-photo-left, .kids-photo-right {
+        width: 80px;
+    }
+    .photo-caption {
+        font-size: 14px;
+        margin-top: 4px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 50px; }
+    .container { padding: 20px 15px 40px; margin: 20px auto; }
+    .card { padding: 32px 20px; }
+    h2 { font-size: 32px; }
+    .timer-box { padding: 10px 12px; min-width: 70px; }
+    .timer-number { font-size: 36px; }
+    .date { font-size: 36px; padding: 6px 20px; }
+    
+    /* Ещё меньше фото на очень узких экранах */
+    .kids-photo-left, .kids-photo-right {
+        width: 60px;
+    }
+    .photo-caption {
+        font-size: 11px;
+    }
+}
         
         .container {
             position: relative;
